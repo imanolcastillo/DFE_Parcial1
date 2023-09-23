@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <script src="./js/main.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <a id="img-nav" onclick="mostrarMensajeInicial()">
+      <img src="./img/hombre.png" title="img" />
+    </a>
+    <button id="menu-btn" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav id="nav" class="nav">
+      <ul>
+        <li><a href="#acerca" onclick="makeLinksSmooth()">Acerca</a></li>
+        <li>
+          <a href="#habilidades" onclick="makeLinksSmooth()">Habilidades</a>
+        </li>
+        <li>
+          <a href="#proyectos" onclick="makeLinksSmooth()">Proyectos</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#contacto" id="contactonav" onclick="makeLinksSmooth()">
+      <img src="./img/contacto.png" title="contacto" />
+    </a>
+  </header>
+  <main>
+    <section class="home">
+      <div class="home-banner">
+        <h1>Bienvenidos</h1>
+        <h3>Mi nombre es Imanol</h3>
+        <p>Aqui descubriras un poco sobre mi</p>
+      </div>
+    </section>
+    <section id="acerca">
+      <h1>Acerca de mi</h1>
+      <div class="mi-info">
+        <img src="./img/imanol.jpg" alt="imanol" />
+        <p>
+          Soy un estudiante de último año de Ingeniería en Sistemas de Información apasionado por el diseño y desarrollo de aplicaciones. A lo largo de mis estudios, he demostrado creatividad, adaptabilidad y desempeño en equipos multidisciplinarios. Mi enfoque se centra en encontrar soluciones tecnológicas innovadoras y atractivas, y estoy emocionado por aplicar mis habilidades y continuar creciendo en el campo de la tecnología de la información después de egresar.</p>
+      </div>
+    </section>
+    <section id="habilidades">
+      <h1>Habilidades</h1>
+      <p>
+        Aqui estan cada una de las herramientas y lenguajes en las que tengo experiencia y que he aprendido a lo largo
+        de mi carrera como estudiante de Ingenieria en Software además de las que he aprendido por mi cuenta.
+      </p>
+      <div class="centrado columna">
+        <div class="lenguajes">
+          <div class="lenguajes-list">
+            <ul class="no-list">
+              <li class="languaje-icon-rotate">
+                <img class="languaje-icon border-radius-img" src="./img/csharp.png" />C#
+              </li>
+              <li class="languaje-icon-rotate">
+                <img class="languaje-icon border-radius-img" src="./img/html.svg" />HTML
+              </li>
+              <li class="languaje-icon-rotate">
+                <img class="languaje-icon border-radius-img" src="./img/java.png" />Java
+              </li>
+              <li class="languaje-icon-rotate">
+                <img class="languaje-icon border-radius-img" src="./img/javascript.png" />JavaScript
+              </li>
+            </ul>
+          </div>
+          <div class="lenguajes-list">
+            <ul class="no-list">
+              <li class="languaje-icon-rotate">
+                <img class="languaje-icon border-radius-img" src="./img/php.png" />PHP
+              </li>
+              <li class="languaje-icon-rotate">
+                <img class="languaje-icon border-radius-img" src="./img/python.png" />Python
+              </li>
+              <li class="languaje-icon-rotate">
+                <img class="languaje-icon border-radius-img" src="./img/sql.png" />SQL
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="proyectos">
+      <h1>Proyectos</h1>
+      <div>
+        <div class="margen-abajo">
+          <div>
+            <h2 class="border">Peekaboo</h2>
+          </div>
+          <div>
+            <p>
+              Es un software educativo, desarrollado para la clase de
+              Desarrollo de Sistemas I en la Universidad de Sonora, tiene como
+              propósito registrar lo aprendido en el curso para resolver un
+              problema planteado, en este caso la educación a menores.
+            </p>
+            <a class="no-decoration" target="_blank" href="https://github.com/imanolcastillo/Juego-Pekaboo">
+              <button class="see-more-button">
+                <div class="see-more-text">
+                  <p>Ver más</p>
+                </div>
+                <div>
+                  <svg class="flecha" viewBox="0 0 24 24">
+                    <path d="m4 16 8-8 8 8"></path>
+                  </svg>
+                </div>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="margen-abajo">
+          <div>
+            <h2 class="border">Tesoro Perdido</h2>
+          </div>
+          <div>
+            <p>
+              Es un juego realizado en Visual Studio el cual consiste en
+              adivinar donde se encuentra el tesoro perdido, se cuenta con
+              tres cofres del tesoro y solo uno contendrá la recompensa, de
+              igual manera se cuenta con dos contadores, uno de ellos sirve
+              para tener el número de veces que se ha jugado y el segundo para
+              las veces que se ha ganado.
+            </p>
+            <a class="no-decoration" target="_blank" href="https://github.com/imanolcastillo/TesoroPerdido">
+              <button class="see-more-button">
+                <div class="see-more-text">
+                  <p>Ver más</p>
+                </div>
+                <div>
+                  <svg class="flecha" viewBox="0 0 24 24">
+                    <path d="m4 16 8-8 8 8"></path>
+                  </svg>
+                </div>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="margen-abajo">
+          <div>
+            <h2 class="border">Awason</h2>
+          </div>
+          <div>
+            <p>
+              Es una aplicación movil desarrollada en Dart que su función practicamente es hacer pedidos de garrafones
+              de agua a domicilio.
+            </p>
+            <a class="no-decoration" target="_blank" href="https://github.com/aydin-due/awason">
+              <button class="see-more-button">
+                <div class="see-more-text">
+                  <p>Ver más</p>
+                </div>
+                <div>
+                  <svg class="flecha" viewBox="0 0 24 24">
+                    <path d="m4 16 8-8 8 8"></path>
+                  </svg>
+                </div>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer id="footer">
+    <h2 style="text-align: center; margin-bottom: 1rem;">Contacto</h2>
+    <div class="contactox" id="contacto">
+      <div class="container-form">
+        <form action="" method="">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" />
+          </div>
+          <div class="form-group">
+            <label for="correo">E-mail</label>
+            <input type="email" class="form-control" id="correo" name="correo" />
+          </div>
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <input type="text" class="form-control" id="asunto" name="asunto" />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea class="form-control msj" id="mensaje" name="mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary custom" onclick="contactoMesaje()">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <div class="redes-sociales">
+      <ul>
+        <li>
+          <a href="#">
+            <img src="./img/facebook.png" alt="Facebook" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/twitter.png" alt="Twitter" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/instagram.png" alt="Instagram" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/youtube.png" alt="Youtube" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p>Imanol Castillo &copy; 2023</p>
+  </footer>
+  <button id="btn-ir-arriba">
+    <svg viewBox="0 0 24 24">
+      <path d="m4 16 8-8 8 8"></path>
+    </svg>
+  </button>
+</body>
+
+</html>
